@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosF.css">
+
+</head>
+<body>
+    <div Class="Section1">
+       <div class="container">
+        <div class="Form">
+            <div class="title">
+                <h1 class="OLVA">OLVA <br> Courier</h1>
+            </div>
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Marca</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" id="n13">Varias</div>
+                </div>
+            </div>
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Modelo</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" id="n14">Varios</div>
+                </div>
+            </div>
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Año</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" id="n15">Varios</div>
+                </div>
+            </div>
+
+            
+
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Capacida de Carter (glns)</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" id="n16">1.5</div>
+                </div>
+            </div>
+
+            <div class="lilContainer">
+                <label class="col-form-label col-3"># Unidades</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" id="n17">50</div>
+                </div>
+            </div>
+
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Recorrido promedio (Kms/mes-unidad)</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control constant-number" placeholder="135" id="n18">18000</div>
+                </div>
+            </div>
+    
+                
+            
+    
+            <div class="lilContainer">
+                <div class="alert alert-succes" role="alert"> asumiendo 6/4 prom.
+                </div>
+            </div>
+            <div class="lilContainer">
+                <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
+                </div>
+            </div>
+        </div>
+            
+
+       </div>
+
+
+
+
+    
+       <div class="container">
+        <div class="Form">
+            <div class="title">
+                <h1>Situacion<br> Actual</h1>
+            </div>
+            <div class="lilContainer">
+                <label class="hLabel">Tipo de aceite</label>
+                <div class="col-8 col-md-4">
+                    <div type="number" class="form-control-title constant-number" >Federal MAXXUM</div>
+                </div>
+            </div>
+
+
+    
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                <div class="col-8 col-md-4">
+                    <input type="number" class="form-control " id="n7"></input>
+                </div>
+            </div>
+    
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Costo aceite ($/gln)</label>
+                <div class="col-8 col-md-4">
+                    <input type="number" class="form-control" id="n8">
+                </div>
+            </div>
+
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                <div class="col-8 col-md-4">
+                    <input type="number" class="form-control" id="n9">
+                </div>
+            </div>
+
+            
+            <div class="lilContainer">
+                <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                <div class=" alert-succes form-control" id="respu1" role="alert">
+                </div>
+            </div>
+            
+            <div class="lilContainer">
+                <label class="col-form-label col-3"># Filtros Flota</label>
+                <div class="alert-succes form-control" id="resp2" role="alert">
+                </div>
+            </div>
+
+            <div class="lilContainer">
+                <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
+                <div class="alert-succes form-control" id="resp3" role="alert">
+                </div>
+            </div>
+
+            <button class="btn btn-surce" id="CalcularB">Calcular</button>
+    
+                
+            
+    
+            <div class="lilContainer">
+                <div class="alert alert-succes" id="resp" role="alert">
+                </div>
+            </div>
+        </div>
+
+       </div>
+       
+       
+
+
+
+
+
+       <div class="container Calculadora-Usuario">
+        
+            <div class="Form">
+                <div class="title">
+                    <h1>Situacion Propuesta</h1>
+                </div>
+                <div class="lilContainer">
+                    <label class="hLabel">Tipo de aceite</label>
+                    <div class="col-8 col-md-4">
+                        <div type="number" class="form-control-title constant-number" >Federal MAXXUM</div>
+                    </div>
+                </div>
+
+
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control" id="n1">
+                    </div>
+                </div>
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control" id="n2">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control" id="n3">
+                    </div>
+                </div>
+
+
+
+
+                
+             
+                    
+                    
+                  <div class="lilContainer">
+                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                    <div class=" alert-succes form-control" id="respuesta1" role="alert">
+                    </div>
+                </div>
+                
+                <div class="lilContainer">
+                    <label class="col-form-label col-3"># Filtros Flota</label>
+                    <div class="alert-succes form-control" id="respuesta2" role="alert">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
+                    <div class="alert-succes form-control" id="respuesta3" role="alert">
+                    </div>
+                </div>
+                
+                <div class="lilContainer">
+                <button class="btn btn-surce" id="Calcular">Calcular</button>
+                <button class="btn" id="btn-ahorro"> ahorro anual ...</button>
+                </div>
+                
+        
+                <div class="lilContainer">
+                    <div class="alert alert-succes" id="respuesta" role="alert">
+                    </div>
+                </div>
+
+                <div class="ahorro" >
+                
+                    <div class="alert-ahorro alert-succes" id="ahorrosAnual" role="alert"></div>
+
+                </div>
+                
+
+            </div>
+ 
+       </div>
+       
+     
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+<script class="situacion-propuesta">
+    let boton = document.getElementById('Calcular');
+
+    let respuesta = document.getElementById('respuesta');
+    let respuesta1 = document.getElementById('respuesta1');
+    let respuesta2 = document.getElementById('respuesta2');
+    let respuesta3 = document.getElementById('respuesta3');
+
+    let s
+
+    let ahorroAnual =document.getElementById('ahorroAnual');
+
+    boton.addEventListener("click", hacerCalculo);
+
+    function hacerCalculo() {
+        let n1 = parseFloat(document.getElementById("n1").value);
+        let n2 = parseFloat(document.getElementById("n2").value);
+        let n3 = parseFloat(document.getElementById("n3").value);
+     
+        let n16 = parseFloat(document.getElementById("n16").innerHTML);
+        let n17 = parseFloat(document.getElementById("n17").innerHTML);
+        let n18 = parseFloat(document.getElementById("n18").innerHTML);
+
+         
+
+
+       
+        let sR1 = (n18*n17)/n1
+        let sR2 = sR1
+        let sR3 = sR1 * n16
+        s =  (n2 * sR3) + (n3 * sR2);
+       
+
+
+        respuesta1.innerHTML =   sR1;
+        respuesta2.innerHTML =   sR2;
+        respuesta3.innerHTML =   sR3;
+
+        respuesta.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + s;
+        
+
+       
+    }
+
+
+
+
+
+
+    let botonB = document.getElementById('CalcularB');
+
+let resp = document.getElementById('resp');
+let resp1 = document.getElementById('resp1');
+let resp2 = document.getElementById('resp2');
+let resp3 = document.getElementById('resp3');
+
+let sB 
+
+
+
+botonB.addEventListener("click", hacerCalculoB);
+
+function hacerCalculoB() {
+    let n7 = parseFloat(document.getElementById("n7").value);
+    let n8 = parseFloat(document.getElementById("n8").value);
+    let n9 = parseFloat(document.getElementById("n9").value);
+ 
+    let n16 = parseFloat(document.getElementById("n16").innerHTML);
+    let n17 = parseFloat(document.getElementById("n17").innerHTML);
+    let n18 = parseFloat(document.getElementById("n18").innerHTML);
+
+     
+
+
+   
+    let sR1B = (n18*n17)/n7
+    let sR2B = sR1B
+    let sR3B = sR1B * n16
+    sB =  (n8 * sR3B) + (n9 * sR2B);
+    
+
+
+    respuesta1.innerHTML =   sR1B;
+    respuesta2.innerHTML =   sR2B;
+    respuesta3.innerHTML =   sR3B;
+
+    resp.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + sB;
+    
+
+   
+}
+
+let botonC = document.getElementById('btn-ahorro');
+
+botonC.addEventListener("click", hacercalculoC);
+
+function hacercalculoC() {
+    let Tot1 = s;
+    let Tot2 = sB;
+
+    let Ah = (Tot2 - Tot1) * 12;
+
+    ahorrosAnual.innerHTML = "EL AHORRO ANUAL TOTAL FLOTA ES ($)" + Ah;
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

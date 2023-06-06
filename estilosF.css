@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+h1 {
+   font-size: 48px;
+   font-family: 'Roboto', sans-serif;
+}
+
+h2{
+   font-family: 'Roboto', sans-serif;
+}
+
+p{
+   font-family: 'Roboto', sans-serif;
+}
+
+.OLVA{ 
+   color: red;
+}
+
+body {
+   margin: 0;
+}
+
+
+.Section1 {
+   background-color: rgb(208, 210, 211);
+   float: left;
+   height: auto;
+   width: 100%;
+   padding-bottom: 80px;
+   
+   round-color: #e5e5f7;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #7077ff55, #7077ff );
+      
+
+}
+
+.container {
+   min-width:300px ;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 20px;
+   width: 28%;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 10px 20px -5px rgb(0 0 0 / 50%);
+   float: left;
+   transition: .8s;
+    
+}
+
+.container:hover{
+   scale: 1.03;
+   box-shadow: 0 5px 10px -5px rgba(255, 255, 255, 0.8);
+}
+
+
+
+.Form {
+ 
+   margin: auto;
+   vertical-align: center;
+   
+
+  
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+
+}
+
+.form-control {
+  width: 50px;
+   margin-left: 0;
+ 
+   
+}
+
+.form-control-title {
+    margin-left: 10px;
+ }
+
+ .hLabel{
+   size
+ }
+
+.lilContainer {
+   display: flex;
+   margin-top: 20px;
+   justify-content: space-between;
+   
+}
+
+.constant-number{
+   padding: 2px 3px;
+   background-color: white;
+   color: red;
+   margin-left: 10px;
+   border: solid gray 1px;
+   border-radius: 1px;
+}
+
+.btn {
+   
+   display: block;
+   cursor: pointer;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 11px 40px;
+   margin-top: 20px;
+   background-color: #7077ff;
+   border-color: #7077ff;
+   border-radius: 20px 20px 20px 20px;
+   transition: .5s;
+   box-shadow: none;
+}
+
+.btn:hover {cursor: pointer;
+   color: #7077ff;
+   scale: 1.13;
+   background-color: white;
+
+}
+.alert {
+   
+   margin: auto;
+   padding: 3px 5px;
+   background-color: beige;
+   transition: .8s;
+}
+
+.alert::before{
+   display: none;
+}
+
+.alert::after{
+   display: contents;
+}
+
+.alert-ahorro {
+   position: absolute center;
+   margin: auto;
+   padding: 30px 50px;
+   background-color: rgb(255, 255, 255);
+   transition: .8s;
+   text-align: center;
+}
+
+.ahorro-anual{
+   display: block;
+   cursor: pointer;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 11px 40px;
+   margin: auto;
+   offset: -50px 0;
+   background-color: #7077ff;
+   border-color: #7077ff;
+   border-radius: 20px 20px 20px 20px;
+   transition: .5s;
+   box-shadow: none;
+}
+
+.ahorro{
+   
+   
+   background-color: white;
+}
+
