@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilosF.css">
+
+</head>
+<body>
+
+    <div class="Cabecera">
+        <div class="header-container">
+            <div class="Header">
+
+                <div class="logo">
+                <img class="LogoH"  src="data:image/png;base64,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" alt="">
+                </div>
+
+                  
+            </div>
+
+        
+
+            <div class="Header-b">
+                <nav class="main-nav">
+                    <ul>
+                        <li> <a href="#Hero"> Inicio</a></li>
+                        <li> <a href="#Section1"> Bases del calculo</a></li>
+                        <li> <a href="#Section2"> Calculos comparativos</a></li>
+                        <li> <a href="#resultados"> Resultados</a></li>
+
+                    </ul>
+                </nav>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="Hero" id="Hero">
+
+        
+        <div class="container-Hero">
+            <img src="http://3.83.110.112/wp-content/uploads/2023/06/cropped-download.png"></img>
+            <h1> CALCULADORA <br> DE <span class="H-yellow">AHORRO</spsn></h1>
+            <button class="btn"  ><a href="#Section1">Empezar </a></button>
+            
+        </div> 
+
+      
+
+        
+
+    </div>
+
+
+
+
+
+
+
+    <div class="Section1" id="Section1">
+
+
+        <div class="container2-section1 section1-title">
+
+            <h1>BASES PARA <br>EL <span class="H-yellow">CALCULO</span></h1>
+            <div class="lilContainer-result">
+                <div class="alert alert-succes" role="alert"> Asumiendo 6/4 prom.
+                </div>
+            
+                <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
+                </div>
+            </div>   
+
+
+        </div>
+        
+        <div class="container-section1">
+            <div class="Form">
+                
+
+                <div class="lilContainer-title">
+                   
+                    <div class="col-8 col-md-4">
+                        <input type="text" class="form-control-texto input-texto-empresa" id="n13"></input>
+                    </div>
+                     <label class="col-form-label col-3">Empresa</label>
+                </div>
+
+                <div class="lilContainer-text">
+                    <label class="col-form-label col-3">Marca</label>
+                    <div class="col-8 col-md-4">
+                        <input type="text" class="form-control input-texto" id="n13" placeholder="varios"></input>
+                    </div>
+                    
+                </div>
+                <div class="lilContainer-text">
+                    <label class="col-form-label col-3">Modelo</label>
+                    <div class="col-8 col-md-4">
+                        <input type="text" class="form-control input-texto" id="n14" placeholder="varios"></input>
+                    </div>
+                    
+                </div>
+                <div class="lilContainer-text">
+                    <label class="col-form-label col-3">Año</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control input-texto" id="n15" placeholder="20--"></input>
+                    </div>
+                    
+                </div>
+
+                
+    
+                
+    
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Capacida de Carter (glns)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number constant-number" id="n16"></input>
+                    </div>
+                </div>
+    
+                <div class="lilContainer">
+                    <label class="col-form-label col-3"># Unidades</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number constant-number" id="n17"></input>
+                    </div>
+                </div>
+    
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Recorrido promedio (Kms/mes-unidad)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number constant-number"  id="n18"></input>
+                    </div>
+                </div>
+                
+              
+        
+                 <div class="lilContainer-result">
+                    <div class="alert alert-succes" role="alert"> asumiendo 6/4 prom.
+                    </div>
+                </div>
+                <div class="lilContainer-result">
+                    <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
+                    </div>
+                </div>   
+
+                 <button class="btn" > <a  href="#Section2" >hojas de calculo</a></button>
+        
+               
+            </div>
+            </div>
+
+        </div> 
+
+        
+
+    </div>
+
+
+
+
+    <div class="Section2" id="Section2">
+
+        
+        
+            
+
+
+
+    
+        <div class="container">
+            <div class="Form">
+                
+                <div class="lilContainer-title">
+                    
+                    <div class="col-8 col-md-4">
+                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Aceite actual"></input>
+                    </div>
+                    <label class="col-form-label col-3">Tipo de aceite actual</label>
+                </div>
+
+
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n7"></input>
+                    </div>
+                    
+                </div>
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n8">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n9">
+                    </div>
+                </div>
+
+                
+                <div class="lilContainer">
+                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="resp1" role="alert">
+                    </div>
+                </div>
+                
+                <div class="lilContainer">
+                    <label class="col-form-label col-3"># Filtros Flota</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="resp2" role="alert">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="resp3" role="alert">
+                    </div>
+                </div>
+
+                
+        
+                
+            </div>
+
+       </div>
+        
+       
+       
+       
+
+
+
+
+
+       <div class="container Calculadora-Usuario">
+        
+            <div class="Form">
+                
+                <div class="lilContainer-title">
+                    <div class="col-8 col-md-4">
+                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Federal"></input>
+                    </div>
+                    <label class="col-form-label">Tipo de aceite</label>
+                </div>
+
+
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n1">
+                    </div>
+                </div>
+        
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n2">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control-number variable-number" id="n3">
+                    </div>
+                </div>
+
+
+
+
+                
+             
+                    
+                    
+                  <div class="lilContainer">
+                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="respuesta1" role="alert">
+                    </div>
+                </div>
+                
+                <div class="lilContainer">
+                    <label class="col-form-label col-3"># Filtros Flota</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="respuesta2" role="alert">
+                    </div>
+                </div>
+
+                <div class="lilContainer">
+                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
+                    <div class="form-control-number alert-succes variable-number-b" id="respuesta3" role="alert">
+                    </div>
+                </div>
+                
+                <div class="lilContainer-button">
+                    
+                <button class="btn btn-surce" id="Calcular" href="#resultados"><a href="#resultados">Calcular</a></button>
+
+                </div>
+                
+        
+             
+                
+                
+
+            </div>
+ 
+       </div>
+       
+     
+
+
+        </div>
+
+        <div class="resultados" id="resultados">
+
+          
+
+
+                <div class="container-section1 section1-title ">
+
+                    <h1>Analisis de ahorro</h1>
+
+                        <div class="ahorro">
+                            <div class="alert alert-succes" id="resp" role="alert">
+                            </div>
+                        </div>
+                        <h2> Situacion actual por mes</h2>
+
+                        <div class="ahorro">
+                            <div class="alert alert-succes" id="respuesta" role="alert">
+                            </div>
+                        </div>
+                        <h2> Situacion propuesta por mes</h2>
+
+                        <div class="ahorro">
+                            <div class="alert alert-succes" id="ahorrosAnual" role="alert">
+                            </div>
+                        </div>
+                        <h2> Ahorro anual</h2>
+
+                    <button class="btn"  ><a href="#Hero">volver al inicio </a></button>
+
+               
+            
+        </div>
+         </div>
+
+                
+
+
+
+
+
+
+
+
+
+<script class="situacion-propuesta">
+    let boton = document.getElementById('Calcular');
+
+    let respuesta = document.getElementById('respuesta');
+    let respuesta1 = document.getElementById('respuesta1');
+    let respuesta2 = document.getElementById('respuesta2');
+    let respuesta3 = document.getElementById('respuesta3');
+
+    let s
+
+    let ahorroAnual =document.getElementById('ahorroAnual');
+
+    boton.addEventListener("click", hacerCalculo);
+
+    function hacerCalculo() {
+        let n1 = parseFloat(document.getElementById("n1").value);
+        let n2 = parseFloat(document.getElementById("n2").value);
+        let n3 = parseFloat(document.getElementById("n3").value);
+     
+        let n16 = parseFloat(document.getElementById("n16").value);
+        let n17 = parseFloat(document.getElementById("n17").value);
+        let n18 = parseFloat(document.getElementById("n18").value);
+
+         
+
+
+       
+        let sR1 = (n18*n17)/n1
+        let sR2 = sR1
+        let sR3 = sR1 * n16
+        s =  (n2 * sR3) + (n3 * sR2);
+       
+
+
+        respuesta1.innerHTML =   sR1;
+        respuesta2.innerHTML =   sR2;
+        respuesta3.innerHTML =   sR3;
+
+        respuesta.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + s;
+        
+
+       
+    }
+
+
+
+
+
+
+    let botonB = document.getElementById('Calcular');
+
+let resp = document.getElementById('resp');
+let resp1 = document.getElementById('resp1');
+let resp2 = document.getElementById('resp2');
+let resp3 = document.getElementById('resp3');
+
+let sB 
+
+
+
+botonB.addEventListener("click", hacerCalculoB);
+
+function hacerCalculoB() {
+    let n7 = parseFloat(document.getElementById("n7").value);
+    let n8 = parseFloat(document.getElementById("n8").value);
+    let n9 = parseFloat(document.getElementById("n9").value);
+ 
+    let n16 = parseFloat(document.getElementById("n16").value);
+    let n17 = parseFloat(document.getElementById("n17").value);
+    let n18 = parseFloat(document.getElementById("n18").value);
+
+     
+
+
+   
+    let sR1B = (n18*n17)/n7
+    let sR2B = sR1B
+    let sR3B = sR1B * n16
+    sB =  (n8 * sR3B) + (n9 * sR2B);
+    
+
+
+    resp1.innerHTML =   sR1B;
+    resp2.innerHTML =   sR2B;
+    resp3.innerHTML =   sR3B;
+
+    resp.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + sB;
+    
+
+   
+}
+
+let botonC = document.getElementById('Calcular');
+
+botonC.addEventListener("click", hacercalculoC);
+
+function hacercalculoC() {
+    let Tot1 = s;
+    let Tot2 = sB;
+
+    let Ah = (Tot2 - Tot1) * 12;
+
+    ahorrosAnual.innerHTML = "El ahorro anual flota es ($) " + Ah;
+}
+
+</script>
+
+
+
+</body>
+</html>
