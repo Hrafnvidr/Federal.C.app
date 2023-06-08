@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/calculator-favicon.png?raw=true">
     <link rel="stylesheet" href="estilosF.css">
+    <script> 
+        $(function(){
+          $("#includedContent").load("preloader.html"); 
+        });
+    </script>
 
 </head>
+
+
+
 <body>
 
-    <div class="Cabecera">
+    <div id="includedContent"></div>
+
+    
+
+    <header class="Header Cabecera">
         <div class="header-container">
-            <div class="Header">
+            <div class="Header1">
 
                 <div class="logo">
                 <img class="LogoH"  src="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/download.png?raw=true" alt="">
@@ -39,7 +52,7 @@
 
         </div>
 
-    </div>
+    </header>
 
 
     <div class="Hero" id="Hero">
@@ -65,7 +78,7 @@
 
 
     <div class="Section1" id="Section1">
-
+        
 
         <div class="container2-section1 section1-title">
 
@@ -155,13 +168,13 @@
         
                
             </div>
-            </div>
+        </div>
 
-        </div> 
+    </div> 
 
         
 
-    </div>
+    
 
 
 
@@ -321,7 +334,7 @@
      
 
 
-        </div>
+    </div>
 
         <div class="resultados" id="resultados">
 
@@ -351,14 +364,19 @@
                         <h2> Ahorro anual</h2>
 
                     <button class="btn"  ><a href="#Hero">volver al inicio </a></button>
+                 
+                 </div>
 
-               
-            
+                 
+                 
         </div>
-         </div>
 
                 
-
+         
+            <div class="container-btn-pdf">
+                <button class="btn" id="Print"  ><a href="#Section1"> Descargar PDF </a></button>
+            </div>
+            
 
 
 
@@ -473,6 +491,18 @@ function hacercalculoC() {
 }
 
 </script>
+
+<script id="Print">
+     var printbtn = document.getElementById("Print");
+
+     printbtn.addEventListener("click" ,function(){
+        print()
+     })
+
+</script>
+
+
+
 
 
 
