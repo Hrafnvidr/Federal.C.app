@@ -1,480 +1,827 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilosF.css">
 
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
-    <div class="Cabecera">
-        <div class="header-container">
-            <div class="Header">
 
-                <div class="logo">
-                <img class="LogoH"  src="https://raw.githubusercontent.com/Hrafnvidr/Hrafnvidr.github.io/5233f552e04c5b64f56052d26a5d33c43d79cdd6/uploads/download.png" alt="">
-                </div>
+h1 {
+   font-size: 48px;
+   font-family: 'Roboto', sans-serif;
+}
 
-                  
-            </div>
+h2{
+   font-family: 'Roboto', sans-serif;
+}
 
-        
+p{
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+.OLVA{ 
+   color: red;
+}
+
+.btn {
+   
+   display: block;
+   cursor: pointer;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 1px 1px;
+   margin-top: 20px;
+   background-color: #F5D20A;
+   border:solid 1px #F5D20A;
+   border-radius: 20px 20px 20px 20px;
+   transition: .5s;
+  
+   box-shadow: none;
+   text align: center;
+}
+
+.btn a {
+   display: flex;
+   justify-content: center;
+   padding: 11px 40px;
+   text-decoration: none;
+   color: #ffffff;
+   transition: .5s;
+   border-radius: 20px;
+   
+}
+
+
+
+.btn:hover {
+   
+   cursor: pointer;
+   color: #F5D20A;
+   scale: 1.08;
+   background-color: #A3A3A3;
+
+}
+.btn a:hover {
+   
+   cursor: pointer;
+   color: #F5D20A;
+   scale: 1.03;
+   background-color: #A3A3A3;
+
+}
+
+.resultados button {
+
+  width: 100%;
+
+}
+
+
+
+
+
+body,html {
+   scroll-behavior: smooth;
+   width: 100vw;
+   scrollbar-highlight-color: #F5D20A ;  
+   
+   overflow-x: hidden;
+  
+   background-color: rgb(0 0 0 / 0%);
+   margin: 0;
+   
+  
+
+}
+
+.Cabecera {
+   position: fixed;
+   z-index: 999;
+   
+   align-items: center;
+   height: auto;
+   width: 100vw;
+
+   background-color: transparent;
+   
+   
+   
+}
+
+
+.Header {
+   
+   
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+   
+   width: 100vw;
+   
+   
+   
+   background-color: #ffffff;
+   box-shadow: 0 10px 20px -5px rgb(0 0 0 / 50%);
+   transition: .8s; 
+}
+.Header-b {
+   
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+   background-color: #F5D20A;
+
+   padding: 8px 8px;
+   
+   width: 100vw;
+   
+   
+   box-shadow: 0 10px 20px -5px rgb(0 0 0 / 50%);
+   transition: .8s; 
+}
+
+
+.logo {
+   
+}
+
+.LogoH {
+   
+   width: 10rem;
+}
 
-            <div class="Header-b">
-                <nav class="main-nav">
-                    <ul>
-                        <li> <a href="#Hero"> Inicio</a></li>
-                        <li> <a href="#Section1"> Bases del calculo</a></li>
-                        <li> <a href="#Section2"> Calculos comparativos</a></li>
-                        <li> <a href="#resultados"> Resultados</a></li>
-
-                    </ul>
-                </nav>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="Hero" id="Hero">
-
-        
-        <div class="container-Hero">
-            <img src="https://raw.githubusercontent.com/Hrafnvidr/Hrafnvidr.github.io/5233f552e04c5b64f56052d26a5d33c43d79cdd6/uploads/download.png"></img>
-            <h1> CALCULADORA <br> DE <span class="H-yellow">AHORRO</spsn></h1>
-            <button class="btn"  ><a href="#Section1">Empezar </a></button>
-            
-        </div> 
-
-      
-
-        
-
-    </div>
-
-
-
-
-
-
-
-    <div class="Section1" id="Section1">
-
-
-        <div class="container2-section1 section1-title">
-
-            <h1>BASES PARA <br>EL <span class="H-yellow">CALCULO</span></h1>
-            <div class="lilContainer-result">
-                <div class="alert alert-succes" role="alert"> Asumiendo 6/4 prom.
-                </div>
-            
-                <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
-                </div>
-            </div>   
-
-
-        </div>
-        
-        <div class="container-section1">
-            <div class="Form">
-                
-
-                <div class="lilContainer-title">
-                   
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" id="n13"></input>
-                    </div>
-                     <label class="col-form-label col-3">Empresa</label>
-                </div>
-
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Marca</label>
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control input-texto" id="n13" placeholder="varios"></input>
-                    </div>
-                    
-                </div>
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Modelo</label>
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control input-texto" id="n14" placeholder="varios"></input>
-                    </div>
-                    
-                </div>
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Año</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control input-texto" id="n15" placeholder="20--"></input>
-                    </div>
-                    
-                </div>
-
-                
-    
-                
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Capacida de Carter (glns)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number" id="n16"></input>
-                    </div>
-                </div>
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Unidades</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number" id="n17"></input>
-                    </div>
-                </div>
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Recorrido promedio (Kms/mes-unidad)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number"  id="n18"></input>
-                    </div>
-                </div>
-                
-              
-        
-                 <div class="lilContainer-result">
-                    <div class="alert alert-succes" role="alert"> asumiendo 6/4 prom.
-                    </div>
-                </div>
-                <div class="lilContainer-result">
-                    <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
-                    </div>
-                </div>   
-
-                 <button class="btn" > <a  href="#Section2" >hojas de calculo</a></button>
-        
-               
-            </div>
-            </div>
-
-        </div> 
-
-        
-
-    </div>
-
-
-
-
-    <div class="Section2" id="Section2">
-
-        
-        
-            
-
-
-
-    
-        <div class="container">
-            <div class="Form">
-                
-                <div class="lilContainer-title">
-                    
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Aceite actual"></input>
-                    </div>
-                    <label class="col-form-label col-3">Tipo de aceite actual</label>
-                </div>
-
-
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n7"></input>
-                    </div>
-                    
-                </div>
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n8">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n9">
-                    </div>
-                </div>
-
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp1" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Filtros Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp2" role="alert">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp3" role="alert">
-                    </div>
-                </div>
-
-                
-        
-                
-            </div>
-
-       </div>
-        
-       
-       
-       
-
-
-
-
-
-       <div class="container Calculadora-Usuario">
-        
-            <div class="Form">
-                
-                <div class="lilContainer-title">
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Federal"></input>
-                    </div>
-                    <label class="col-form-label">Tipo de aceite</label>
-                </div>
-
-
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n1">
-                    </div>
-                </div>
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n2">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n3">
-                    </div>
-                </div>
-
-
-
-
-                
-             
-                    
-                    
-                  <div class="lilContainer">
-                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta1" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Filtros Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta2" role="alert">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta3" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer-button">
-                    
-                <button class="btn btn-surce" id="Calcular" href="#resultados"><a href="#resultados">Calcular</a></button>
-
-                </div>
-                
-        
-             
-                
-                
-
-            </div>
- 
-       </div>
-       
-     
-
-
-        </div>
-
-        <div class="resultados" id="resultados">
-
-          
-
-
-                <div class="container-section1 section1-title ">
-
-                    <h1>Analisis de ahorro</h1>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="resp" role="alert">
-                            </div>
-                        </div>
-                        <h2> Situacion actual por mes</h2>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="respuesta" role="alert">
-                            </div>
-                        </div>
-                        <h2> Situacion propuesta por mes</h2>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="ahorrosAnual" role="alert">
-                            </div>
-                        </div>
-                        <h2> Ahorro anual</h2>
-
-                    <button class="btn"  ><a href="#Hero">volver al inicio </a></button>
-
-               
-            
-        </div>
-         </div>
-
-                
-
-
-
-
-
-
-
-
-
-<script class="situacion-propuesta">
-    let boton = document.getElementById('Calcular');
-
-    let respuesta = document.getElementById('respuesta');
-    let respuesta1 = document.getElementById('respuesta1');
-    let respuesta2 = document.getElementById('respuesta2');
-    let respuesta3 = document.getElementById('respuesta3');
-
-    let s
-
-    let ahorroAnual =document.getElementById('ahorroAnual');
-
-    boton.addEventListener("click", hacerCalculo);
-
-    function hacerCalculo() {
-        let n1 = parseFloat(document.getElementById("n1").value);
-        let n2 = parseFloat(document.getElementById("n2").value);
-        let n3 = parseFloat(document.getElementById("n3").value);
-     
-        let n16 = parseFloat(document.getElementById("n16").value);
-        let n17 = parseFloat(document.getElementById("n17").value);
-        let n18 = parseFloat(document.getElementById("n18").value);
-
-         
-
-
-       
-        let sR1 = (n18*n17)/n1
-        let sR2 = sR1
-        let sR3 = sR1 * n16
-        s =  (n2 * sR3) + (n3 * sR2);
-       
-
-
-        respuesta1.innerHTML =   sR1;
-        respuesta2.innerHTML =   sR2;
-        respuesta3.innerHTML =   sR3;
-
-        respuesta.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + s;
-        
-
-       
+.main-nav{
+   
+}
+
+.main-nav ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.main-nav ul li {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   color: #ffffff;
+   float: left;
+   margin-left: 25px;
+
+
+}
+
+.main-nav ul li a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.main-nav ul li a:hover {
+   color: #A3A3A3;
+}
+
+.main-nav ul li a:active {
+   color: #F5D20A;
+}
+
+
+
+
+.Hero{
+   background-image: url("http://3.83.110.112/wp-content/uploads/2023/06/58-1.png");
+   background-size: cover;
+   background-position-x: center;
+  background-repeat: no-repeat;
+
+   display: flex;
+   justify-content: center;
+   align-content: start;
+   align-items: center;
+
+   padding-top: 25px;
+
+   
+
+   height: 100vh;
+   
+
+}
+
+.container-Hero {
+   display: block;
+   justify-content:center ;
+   align-content: start;
+   align-items: center;
+   width: auto;
+
+   margin-left: ;
+   
+
+   margin-top: 15px;
+   margin-right: ;
+
+}
+
+.container-Hero h1 {
+   color: #ffffff;
+   
+}
+
+.img-hero img {
+   display: flex;
+   justify-content: end;
+   align-content: center;
+   align-items: center;
+  
+  scale: .7;
+   padding-left: 50;
+   margin-left: ;
+   margin-right: ;
+   
+}
+
+.H-yellow {
+   color: #F5D20A;
+}
+
+
+
+
+
+
+.Section1 {
+   background-image: url("https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/06-Slide-especialidades_01%201.png?raw=true");
+   
+   background-color: rgb(49, 49, 49/0%);
+   display: flex;
+   
+   justify-content: center;
+   align-content: center;
+   align-items: top;
+   
+
+  padding: 130px 0px;
+   
+   height: auto;
+   width: 100%;
+   
+   
+   offset-anchor: 100px;
+   
     }
 
 
 
+.resultados {
+   background-image: url();
+   background-position: center right;
+   background-size: cover;
+
+   background-blend-mode: lighten ;
+   
+   background-color: rgba(239, 239, 239, 0.601);;
+   display: flex;
+   
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   
+
+  padding: 130px 0px 80px 0px;
+   
+   height: auto;
+   width: 100%;
+   
+   
+   offset-anchor: 100px;
+   
+    }
+
+    .section1-title {
+      color: #000000;
+      border-right: solid #000 1px ;
+    }
+    .section1-title h1 {
+      color: #A3A3A3;
+      
+    }
+
+    
+
+    .container-section1 {
+      min-width:300px ;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      
+      
+      width: 28%;
+      height: fit-content;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 4px 6px  0px #F5D20A;
+      display: block;
+      transition: .8s;
+       
+   }
+
+   .container2-section1 {
+      
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 40px;
+      
+      height: fit-content;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 4px 6px  0px #F5D20A;
+      display: block;
+      transition: .8s;
+       
+   }
+
+   .container3-section1 {
+      min-width:300px ;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      
+      
+      width: 45%;
+      height: fit-content;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 4px 6px  0px #F5D20A;
+      display: block;
+      transition: .8s;
+       
+   }
+
+   
+
+   
+
+   
 
 
+    .lilContainer-title {
+      text-align: center;
+      align-items: center;
+      align-content: center;
+     
+      margin-top: 10 px;
+      justify-content: center;
+      
+   }
 
-    let botonB = document.getElementById('Calcular');
+   .lilContainer-text {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      
+      border-bottom: solid 1px #000;
+     
+      margin-top: 20px;
+      justify-content: space-between;
+      
+   }
 
-let resp = document.getElementById('resp');
-let resp1 = document.getElementById('resp1');
-let resp2 = document.getElementById('resp2');
-let resp3 = document.getElementById('resp3');
+   .lilContainer {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
 
-let sB 
+      padding: 4px 10px;
+      border-radius: 10px;
 
+      border: solid #000 1px;
+     
+      margin-top: 20px;
+      justify-content: space-between;
+      
+   }
 
+   .lilContainer-button {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
 
-botonB.addEventListener("click", hacerCalculoB);
+      padding: 4px 10px;
+      
 
-function hacerCalculoB() {
-    let n7 = parseFloat(document.getElementById("n7").value);
-    let n8 = parseFloat(document.getElementById("n8").value);
-    let n9 = parseFloat(document.getElementById("n9").value);
- 
-    let n16 = parseFloat(document.getElementById("n16").value);
-    let n17 = parseFloat(document.getElementById("n17").value);
-    let n18 = parseFloat(document.getElementById("n18").value);
+   
+     
+      margin-top: 20px;
+      justify-content: space-between;
+      
+   }
+
+   .lilContainer-result {
+      
+      text-align: left ;
+      
+    
+
+      padding: 10px 10px 10px 10px;
+      border-radius: 10px;
 
      
+      
+      
+   }
 
 
    
-    let sR1B = (n18*n17)/n7
-    let sR2B = sR1B
-    let sR3B = sR1B * n16
-    sB =  (n8 * sR3B) + (n9 * sR2B);
+
+
+
+
+
+
+
+
+
+
+
+
+.img-background   {
+   z-index: 1;
+   position: absolute;
+}
+
+.Section2 {
+   background-image: url("https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/01-Slide-Linea-automotris_01%201.png?raw=true");
+   
+   background-color: rgb(208, 210, 211);
+   display: flex;
+   align-content: center;
+   align-items: center;
+
+   
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   padding: 80px 0px;  
+
+}
+
+
+
+.container {
+   min-width:300px ;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 20px;
+   width: 28%;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 4px 6px  0px #F5D20A;
+   float: left;
+   transition: .8s;
     
+}
 
 
-    resp1.innerHTML =   sR1B;
-    resp2.innerHTML =   sR2B;
-    resp3.innerHTML =   sR3B;
-
-    resp.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + sB;
-    
-
+.container:hover{
+   scale: 1.03;
    
 }
 
-let botonC = document.getElementById('Calcular');
 
-botonC.addEventListener("click", hacercalculoC);
 
-function hacercalculoC() {
-    let Tot1 = s;
-    let Tot2 = sB;
+.Form {
+ 
+   margin: auto;
+   vertical-align: center;
+   
 
-    let Ah = (Tot2 - Tot1) * 12;
+  
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
 
-    ahorrosAnual.innerHTML = "El ahorro anual flota es ($) " + Ah;
 }
 
-</script>
+.form-control-texto {
+   border-top: solid 0px;
+   border-bottom: solid 1px;
+   border-left: none;
+   border-right: none;
+   border-color: black;
+   outline: none;
+
+   margin-bottom: 5px ;
+
+   font-size: 22;
+   width: 100%;
+   
+}
+
+.form-control {
+   border-top: solid 0px;
+   border-bottom: solid 1px;
+   border-left: solid 0px;
+   border-right: none;
+   border-color: black;
+   outline: none;
+
+   margin-bottom: 5px ;
+
+   font-size: 22;
+   width: 100%;
+   
+}
+
+.form-control-number {
+   border-top: solid 0px;
+   border-bottom: solid 0px;
+   border-left: solid 1px;
+   border-right: none;
+   border-color: black;
+   outline: none;
+
+   margin-bottom: 0px ;
+
+   font-size: 22;
+   width: 100%;
+   
+}
+
+
+.col-form-label{
+   font-family: "roboto", sans-serif;
+   font-size: 18;
+   font-weight: 400;
+   text-transform:;
+   text-align: left;
+}
+
+.input-texto-empresa {
+   font-size: 32px;
+   font-family: "roboto",sans-serif;
+   color: red;
+   text-align: center;
+   
+   
+}
+
+::placeholder {
+   color: rgb(232, 232, 232);
+}
+
+.input-texto {
+   font-family: roboto,san-serif;
+   font-weight: 400px;
+   color: red;
+   text-align: end;
+   font-size: 18px;
+   margin-bottom: -0.5px;
+   width: 100%;
+   
+}
 
 
 
-</body>
-</html>
+
+.form-control-title {
+    margin-left: 10px;
+ }
+
+ .hLabel{
+   size
+ }
+
+
+.constant-number{
+
+   padding: 2px 3px;
+   background-color: white;
+   color: red;
+   margin-left: 0px;
+   
+   border-radius: 1px;
+   outline: none;
+   margin-bottom: -0,5px;
+   width: 60px;
+}
+
+.variable-number{
+   font-size: 18;
+
+   padding: 2px 3px;
+   background-color: white;
+   color: black;
+   margin-left: 0px;
+   
+   border-radius: 1px;
+   outline: none;
+   margin-bottom: -0,5px;
+   width: 60px;
+}
+
+.variable-number-b{
+
+   padding: 3px 5px;
+   background-color: #A3A3A3;
+   color: red;
+   margin-right: -10px;
+   margin-top: -3px;
+   margin-bottom: -3px;
+   
+   border-radius: 1px;
+   outline: none;
+   margin-bottom: -0,5px;
+   width: 66px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   
+   border-radius: 0px 8px 8px 0px;
+   
+}
+
+
+.alert {
+   font-family: "roboto", sans-serif;
+   margin: auto;
+
+   transition: .8s;
+}
+
+
+
+.alert::before{
+   display: none;
+}
+
+.alert::after{
+   display: contents;
+}
+
+.alert-ahorro {
+   position: absolute center;
+   margin: auto;
+   padding: ;
+   background-color: rgb(255, 255, 255);
+   transition: .8s;
+   text-align: center;
+}
+
+.ahorro-anual{
+   display: block;
+   cursor: pointer;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 11px 40px;
+   margin: auto;
+   offset: -50px 0;
+   background-color: #7077ff;
+   border-color: #7077ff;
+   border-radius: 20px 20px 20px 20px;
+   transition: .5s;
+   box-shadow: none;
+}
+
+.ahorro{
+   background-color: white;
+}
+
+.resultados{
+  
+   text-align: center;
+}
+
+.resultados h1 {
+   margin-bottom: 60px;
+   color: red;
+}
+
+.resultados h2 {
+
+   border-top: solid #000 1px;
+   margin-bottom: 40px;
+
+ }
+
+ 
+
+
+/*responsive*/
+@media (max-width: 720px) {
+
+   .main-nav{
+      
+      line-height: 30px;
+   
+   }
+
+   .main-nav ul{
+      
+      justify-content: center center;
+      align-items: center;
+      align-content: center;
+      
+   }
+
+
+   .Hero{
+      background-image: url("http://3.83.110.112/wp-content/uploads/2023/06/58-1.png");
+      background-size: cover;
+      background-position-x: center;
+     background-repeat: no-repeat;
+   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: start;
+      align-items: start;
+   
+      padding-top:  30px;
+      padding-left: 30px;
+   
+      
+   
+      height: 100vh;
+      
+   
+   }
+
+   .container-Hero img{
+      width: 80%;
+   }
+
+   
+
+   .img-hero{
+      
+      
+       
+    }
+
+   .Section1 {
+      background-image: url(none);
+      
+      background-color: rgb(49, 49, 49/0%);
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      
+   
+      padding-top: 25px;
+      
+      height: auto;
+      width: 100%;
+      padding-bottom: 80px;
+      padding-top: 80; 
+      
+       }
+
+
+       .container2-section1 {
+         min-width:300px ;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         padding-left: 20px;
+         padding-right: 20px;
+   
+         
+         
+         width: 28%;
+         height: fit-content;
+         background-color: rgb(255, 255, 255);
+         box-shadow: 4px 6px  0px #F5D20A;
+         display: block;
+         transition: .8s;
+          
+      }
+
+       .Section2 {
+         background-color: rgb(208, 210, 211);
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         align-items: center;
+      
+         
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+         padding-bottom: 80px;  
+       } 
+   
+
+
+}
