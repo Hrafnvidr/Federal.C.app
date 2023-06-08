@@ -133,7 +133,7 @@ body,html {
    align-items: center;
    align-content: center;
 
-   background-color: #A3A3A3;
+   background-color: #F5D20A;
 
    padding: 8px 8px;
    
@@ -180,7 +180,7 @@ body,html {
 }
 
 .main-nav ul li a:hover {
-   color: #F5D20A;
+   color: #A3A3A3;
 }
 
 .main-nav ul li a:active {
@@ -191,7 +191,7 @@ body,html {
 
 
 .Hero{
-   background-image: url("https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/58%201.png?raw=true");
+   background-image: url("http://3.83.110.112/wp-content/uploads/2023/06/58-1.png");
    background-size: cover;
    background-position-x: center;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ body,html {
    align-items: center;
    
 
-  padding: 130px 0px;
+  padding: 130px 0px 80px 0px;
    
    height: auto;
    width: 100%;
@@ -343,6 +343,26 @@ body,html {
       transition: .8s;
        
    }
+
+   .container3-section1 {
+      min-width:300px ;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      
+      
+      width: 45%;
+      height: fit-content;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 4px 6px  0px #F5D20A;
+      display: block;
+      transition: .8s;
+       
+   }
+
+   
 
    
 
@@ -438,7 +458,7 @@ body,html {
 }
 
 .Section2 {
-   background-image: url("http://3.83.110.112/wp-content/uploads/2023/06/01-Slide-Linea-automotris_01-1.png");
+   background-image: url("https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/01-Slide-Linea-automotris_01%201.png?raw=true");
    
    background-color: rgb(208, 210, 211);
    display: flex;
