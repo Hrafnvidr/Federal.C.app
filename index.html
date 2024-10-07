@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Federal calculadore de rendimiento</title>
     <link rel="shortcut icon" type="image/png" href="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/calculator-favicon.png?raw=true">
     <link rel="stylesheet" href="estilosF.css">
-    <script> 
-        $(function(){
-          $("#includedContent").load("preloader.html"); 
-        });
-    </script>
+    <meta property="og:image" content="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/calculator-favicon.png?raw=true" />
 
 </head>
 
@@ -21,28 +17,28 @@
 
     <div id="includedContent"></div>
 
-    
+
 
     <header class="Header Cabecera">
         <div class="header-container">
             <div class="Header1">
 
                 <div class="logo">
-                <img class="LogoH"  src="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/download.png?raw=true" alt="">
+                <img class="LogoH"  src="https://github.com/Hrafnvidr/Federal-maqueta.io/blob/main/mockup/uploads/download.png?raw=true" alt="">
                 </div>
 
-                  
+
             </div>
 
-        
+
 
             <div class="Header-b">
                 <nav class="main-nav">
                     <ul>
                         <li> <a href="#Hero"> Inicio</a></li>
-                        <li> <a href="#Section1"> Bases del calculo</a></li>
-                        <li> <a href="#Section2"> Calculos comparativos</a></li>
-                        <li> <a href="#resultados"> Resultados</a></li>
+                        <li> <a href="#Section1"> Datos de la flota</a></li>
+                        <li> <a href="#Section2-1"> Calculos comparativos</a></li>
+                        <li> <a href="#resultados2"> Resultados</a></li>
 
                     </ul>
                 </nav>
@@ -56,18 +52,27 @@
 
 
     <div class="Hero" id="Hero">
-
         
+
+
         <div class="container-Hero">
-            <img src="https://github.com/Hrafnvidr/Hrafnvidr.github.io/blob/main/uploads/download.png?raw=true"></img>
-            <h1> CALCULADORA <br> DE <span class="H-yellow">AHORRO</spsn></h1>
-            <button class="btn"  ><a href="#Section1">Empezar </a></button>
+            <img src="https://github.com/Hrafnvidr/Federal-maqueta.io/blob/main/mockup/uploads/federal-transparent-logo.png?raw=true"></img>
+            <h1> CALCULADORA <br> DE <span class="H-yellow">RENDIMIENTO</span> <br></h1>
+            <!-- <button class="btn"  ><a href="#Section1">Empezar </a></button> -->
+            <div class="bloby-1">
+                <div class="blobu"></div>
+                <div class="blobo"></div>
+                <div class="blob">
+                    <a id="" href="#Section1" class="">EMPEZAR</a>
+                </div>
             
-        </div> 
+            </div>
 
-      
+        </div>
 
-        
+
+
+
 
     </div>
 
@@ -76,313 +81,349 @@
 
 
 
-
-    <div class="Section1" id="Section1">
-        
-
-        <div class="container2-section1 section1-title">
-
-            <h1>BASES PARA <br>EL <span class="H-yellow">CALCULO</span></h1>
-            <div class="lilContainer-result">
-                <div class="alert alert-succes" role="alert"> Asumiendo 6/4 prom.
-                </div>
-            
-                <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
-                </div>
-            </div>   
+    <div class="Section1-1" id="Section1">
+        <div class="Section1" id="">
 
 
-        </div>
-        
-        <div class="container-section1">
-            <div class="Form">
-                
+            <div class="container2-section1 section1-title">
 
-                <div class="lilContainer-title">
-                   
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" id="n13"></input>
-                    </div>
-                     <label class="col-form-label col-3">Empresa</label>
-                </div>
-
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Marca</label>
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control input-texto" id="n13" placeholder="varios"></input>
-                    </div>
-                    
-                </div>
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Modelo</label>
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control input-texto" id="n14" placeholder="varios"></input>
-                    </div>
-                    
-                </div>
-                <div class="lilContainer-text">
-                    <label class="col-form-label col-3">Año</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control input-texto" id="n15" placeholder="20--"></input>
-                    </div>
-                    
-                </div>
-
-                
-    
-                
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Capacida de Carter (glns)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number" id="n16"></input>
-                    </div>
-                </div>
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Unidades</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number" id="n17"></input>
-                    </div>
-                </div>
-    
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Recorrido promedio (Kms/mes-unidad)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number constant-number"  id="n18"></input>
-                    </div>
-                </div>
-                
-              
-        
-                 <div class="lilContainer-result">
-                    <div class="alert alert-succes" role="alert"> asumiendo 6/4 prom.
-                    </div>
-                </div>
+                <h1>DATOS DE <br>LA <span class="H-yellow">FLOTA</span></h1>
                 <div class="lilContainer-result">
-                    <div class="alert alert-succes" role="alert"> Asumiendo 60 Kms. Dia x 30 dias (promedio)
-                    </div>
-                </div>   
 
-                 <button class="btn" > <a  href="#Section2" >hojas de calculo</a></button>
-        
-               
+                </div>
             </div>
+
+
+            <div class="container-section1">
+                <div class="Form">
+
+
+                    <div class="lilContainer-title">
+
+                        <div class="col-8 col-md-4">
+                            <input type="text" class="form-control-texto input-texto-empresa" id="n13"></input>
+                        </div>
+                        <label class="col-form-label col-3">Empresa</label>
+                    </div>
+
+                    <div class="lilContainer-text">
+                        <label class="col-form-label col-3">Marca vehiculo</label>
+                        <div class="col-8 col-md-4">
+                            <input type="text" class="form-control input-texto" id="n13" placeholder="varios"></input>
+                        </div>
+
+                    </div>
+                    <div class="lilContainer-text">
+                        <label class="col-form-label col-3">Modelo motor</label>
+                        <div class="col-8 col-md-4">
+                            <input type="text" class="form-control input-texto" id="n14" placeholder="varios"></input>
+                        </div>
+
+                    </div>
+                    <div class="lilContainer-text">
+                        <label class="col-form-label col-3">Año</label>
+                        <div class="col-8 col-md-4">
+                            <input type="number" class="form-control input-texto" id="n15" placeholder="20--"></input>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="lilContainer">
+                        <label class="col-form-label col-3">Capacidad de Carter (litros)</label>
+                        <div class="col-8 col-md-4">
+                            <input type="number" class="form-control-number constant-number" id="n16"></input>
+                        </div>
+                    </div>
+
+                    <div class="lilContainer">
+                        <label class="col-form-label col-3"># Unidades</label>
+                        <div class="col-8 col-md-4">
+                            <input type="number" class="form-control-number constant-number" id="n17"></input>
+                        </div>
+                    </div>
+
+                    <div class="lilContainer">
+                        <label class="col-form-label col-3">Recorrido promedio (Kms/mes-unidad)</label>
+                        <div class="col-8 col-md-4">
+                            <input type="number" class="form-control-number constant-number"  id="n18"></input>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- <button class="btn" > <a  href="#Section2-1" >Siguiente</a></button> -->
+                    <div class="bloby-1">
+                        <div class="blobu"></div>
+                        <div class="blobo"></div>
+                        <div class="blob">
+                            <a id="" href="#Section2-1" class="">siguiente</a>
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
-
-    </div> 
-
-        
-
-    
-
-
-
-
-    <div class="Section2" id="Section2">
-
-        
-        
-            
-
-
-
-    
-        <div class="container">
-            <div class="Form">
-                
-                <div class="lilContainer-title">
-                    
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Aceite actual"></input>
-                    </div>
-                    <label class="col-form-label col-3">Tipo de aceite actual</label>
-                </div>
-
-
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n7"></input>
-                    </div>
-                    
-                </div>
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n8">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n9">
-                    </div>
-                </div>
-
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp1" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Filtros Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp2" role="alert">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="resp3" role="alert">
-                    </div>
-                </div>
-
-                
-        
-                
-            </div>
-
-       </div>
-        
-       
-       
-       
-
-
-
-
-
-       <div class="container Calculadora-Usuario">
-        
-            <div class="Form">
-                
-                <div class="lilContainer-title">
-                    <div class="col-8 col-md-4">
-                        <input type="text" class="form-control-texto input-texto-empresa" placeholder="Federal"></input>
-                    </div>
-                    <label class="col-form-label">Tipo de aceite</label>
-                </div>
-
-
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n1">
-                    </div>
-                </div>
-        
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo aceite ($/gln)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n2">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
-                    <div class="col-8 col-md-4">
-                        <input type="number" class="form-control-number variable-number" id="n3">
-                    </div>
-                </div>
-
-
-
-
-                
-             
-                    
-                    
-                  <div class="lilContainer">
-                    <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta1" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer">
-                    <label class="col-form-label col-3"># Filtros Flota</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta2" role="alert">
-                    </div>
-                </div>
-
-                <div class="lilContainer">
-                    <label class="col-form-label col-3">Aceite Utilizado Flota (glns)</label>
-                    <div class="form-control-number alert-succes variable-number-b" id="respuesta3" role="alert">
-                    </div>
-                </div>
-                
-                <div class="lilContainer-button">
-                    
-                <button class="btn btn-surce" id="Calcular" href="#resultados"><a href="#resultados">Calcular</a></button>
-
-                </div>
-                
-        
-             
-                
-                
-
-            </div>
- 
-       </div>
-       
-     
-
-
     </div>
 
-        <div class="resultados" id="resultados">
 
-          
+
+
+
+
+
+
+    <div class="Section2-1" id="Section2-1">
+
+        <h1 class="h1-section2-1">DATOS DEL TIPO DE <span class="H-yellow">ACEITE</span></h1>
+
+
+
+        <div class="Section2" id="Section2">
+
+
+
+                <div class="container">
+                    <div class="Form">
+
+                        <div class="lilContainer-title">
+
+                            <div class="col-8 col-md-4">
+                                <input type="text" class="form-control-texto input-texto-empresa" placeholder="Aceite actual"></input>
+                            </div>
+                            <label class="col-form-label col-3">Aceite actual</label>
+                        </div>
+
+
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n7"></input>
+                            </div>
+
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Costo aceite ($/litro)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n8">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n9">
+                            </div>
+                        </div>
+
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                            <div class="form-control-number alert-succes variable-number-b" id="resp1" role="alert">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3"># Filtros Flota</label>
+                            <div type="number" step=".01" class="form-control-number alert-succes variable-number-b" id="resp2" role="alert">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Aceite Utilizado Flota (litros)</label>
+                            <div type="range" step=".01" class="form-control-number alert-succes variable-number-b" id="resp3" role="alert">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="container Calculadora-Usuario">
+
+                    <div class="Form">
+
+
+                        <div class="lilContainer-title">
+                            <div class="col-8 col-md-4">
+                                <select type="text" class="form-control-texto input-texto-empresa" placeholder="">
+                                    <option value="" selected class="selected" >Seleccionar</option>
+                                    <option value="first">Federal Maxxum SAE 15W 40 API CK-4</option>
+                                    <option value="second">Federal Falcon SAE 15W 40 API CI-4</option>
+                                    <option value="third">Federal Maxxum SAE 10W 30 CK-4</option>
+
+                                </select>
+                            </div>
+                            <label class="col-form-label">Aceite propuesta</label>
+                        </div>
+
+
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Periodo de Cambio (Kms)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n1">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Costo aceite ($/litro)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n2">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Costo de Filtros que se cambian ($/Pkg)</label>
+                            <div class="col-8 col-md-4">
+                                <input type="number" class="form-control-number variable-number" id="n3">
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3"># Cambios de Aceite Flota</label>
+                            <div class="form-control-number alert-succes variable-number-b" id="respuesta1" role="alert">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3"># Filtros Flota</label>
+                            <div class="form-control-number alert-succes variable-number-b" id="respuesta2" role="alert">
+                            </div>
+                        </div>
+
+                        <div class="lilContainer">
+                            <label class="col-form-label col-3">Aceite Utilizado Flota (litros)</label>
+                            <div class="form-control-number alert-succes variable-number-b" id="respuesta3" role="alert">
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+        </div>
+        <!-- <div class="lilContainer-button ">
+            <button class="btn btn-surce btn-calculate " id="Calcular" ><a href="#resultados2">Calcular</a></button>
+
+        </div> -->
+        
+            <div class="bloby">
+                <div class="blobu"></div>
+                <div class="blobo"></div>
+                <div class="blob">
+                    <a id="Calcular" href="#resultados2" class="">Calcular</a>
+                </div>
+            
+            </div>
+     </div>
+
+
+
+
+        <div class="resultados2" id="resultados2">
+            <h1 class="h1-section2-1">RESULTADO DEL ANALISIS DE <span class="H-yellow">&nbsp;AHORRO</span></h1>
+
+            <div class="resultados" >
 
 
                 <div class="container3-section1 section1-title ">
-
-                    <h1>Analisis de ahorro</h1>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="resp" role="alert">
-                            </div>
-                        </div>
+ 
                         <h2> Situacion actual por mes</h2>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="respuesta" role="alert">
-                            </div>
+                    <div class="lilContainer">
+                        <DIV class="col-form-label col-3">Costo del Cambio de aceite $/mes (incluye Filtros)</DIV>
+                        <div type="range" step=".01" class="form-control-number alert-succes variable-number-c" id="resp" role="alert">
                         </div>
+                    </div>
+
+                       
+
+                       
                         <h2> Situacion propuesta por mes</h2>
-
-                        <div class="ahorro">
-                            <div class="alert alert-succes" id="ahorrosAnual" role="alert">
+                        <div class="lilContainer">
+                            <DIV class="col-form-label col-3">Costo del Cambio de aceite $/mes (incluye Filtros)</DIV>
+                            <div type="range" step=".01" class="form-control-number alert-succes variable-number-c" id="respuesta" role="alert">
                             </div>
                         </div>
-                        <h2> Ahorro anual</h2>
+
+
+
+                        
+                        <div class="lilContainer">
+                            
+                            <div type="range" step=".01" class="form-control-number alert-succes variable-number-d" id="ahorrosAnual" role="alert">
+                            </div>
+                        </div>
+                        <h2 class="h2-variable-number-d"> Ahorro anual</h2>
 
                     <button class="btn"  ><a href="#Hero">volver al inicio </a></button>
-                 
+
                  </div>
-
                  
-                 
-        </div>
 
-                
-         
-            <div class="container-btn-pdf">
+                </div>
+
+
+                  <div class="container-btn-pdf">
                 <button class="btn" id="Print"  ><a href="#Section1"> Descargar PDF </a></button>
             </div>
-            
+
+
+        </div>
 
 
 
 
 
 
+
+
+<script>
+    let formcash = new Intl.NumberFormat("en-IN", {
+
+        // style: "currency",
+        // currency:"CLP" ,
+
+        maximumFractionDigits: 2,
+        minimumFractionDigits: 2,
+
+    })
+</script>
 
 
 <script class="situacion-propuesta">
@@ -403,30 +444,32 @@
         let n1 = parseFloat(document.getElementById("n1").value);
         let n2 = parseFloat(document.getElementById("n2").value);
         let n3 = parseFloat(document.getElementById("n3").value);
-     
+
         let n16 = parseFloat(document.getElementById("n16").value);
         let n17 = parseFloat(document.getElementById("n17").value);
         let n18 = parseFloat(document.getElementById("n18").value);
 
-         
 
 
-       
+
+
         let sR1 = (n18*n17)/n1
         let sR2 = sR1
         let sR3 = sR1 * n16
         s =  (n2 * sR3) + (n3 * sR2);
-       
 
 
-        respuesta1.innerHTML =   sR1;
-        respuesta2.innerHTML =   sR2;
-        respuesta3.innerHTML =   sR3;
 
-        respuesta.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + s;
-        
+        respuesta1.innerHTML =   sR1.toFixed(2);
+        respuesta2.innerHTML =   sR2.toFixed(2);
+        respuesta3.innerHTML =   sR3.toFixed(2);
 
-       
+        // SITUACION PROPUESTA MES
+        //"Costo del Cambio de aceite $/mes (incluye Filtros) "
+        respuesta.innerHTML =  "$ " + formcash.format(s);
+
+
+
     }
 
 
@@ -441,7 +484,7 @@ let resp1 = document.getElementById('resp1');
 let resp2 = document.getElementById('resp2');
 let resp3 = document.getElementById('resp3');
 
-let sB 
+let sB
 
 
 
@@ -451,30 +494,33 @@ function hacerCalculoB() {
     let n7 = parseFloat(document.getElementById("n7").value);
     let n8 = parseFloat(document.getElementById("n8").value);
     let n9 = parseFloat(document.getElementById("n9").value);
- 
+
     let n16 = parseFloat(document.getElementById("n16").value);
     let n17 = parseFloat(document.getElementById("n17").value);
     let n18 = parseFloat(document.getElementById("n18").value);
 
-     
 
 
-   
+
+
     let sR1B = (n18*n17)/n7
     let sR2B = sR1B
     let sR3B = sR1B * n16
     sB =  (n8 * sR3B) + (n9 * sR2B);
+
+
+
+    resp1.innerHTML =   sR1B.toFixed(2);
+    resp2.innerHTML =   sR2B.toFixed(2);
+    resp3.innerHTML =   sR3B.toFixed(2);
+
     
+    // SITUACION ANUAL POR MES
+    //Costo del Cambio de aceite $/mes (incluye Filtros)
+    resp.innerHTML =   "$ " +formcash.format(sB);
 
 
-    resp1.innerHTML =   sR1B;
-    resp2.innerHTML =   sR2B;
-    resp3.innerHTML =   sR3B;
 
-    resp.innerHTML = "Costo del Cambio de aceite $/mes (incluye Filtros) " + sB;
-    
-
-   
 }
 
 let botonC = document.getElementById('Calcular');
@@ -482,12 +528,14 @@ let botonC = document.getElementById('Calcular');
 botonC.addEventListener("click", hacercalculoC);
 
 function hacercalculoC() {
-    let Tot1 = s;
-    let Tot2 = sB;
+    let Tot1 = s.toFixed(2);
+    let Tot2 = sB.toFixed(2);
 
     let Ah = (Tot2 - Tot1) * 12;
-
-    ahorrosAnual.innerHTML = "El ahorro anual flota es ($) " + Ah;
+    
+    // Ahorro anual
+    // "El ahorro anual flota es ($) " +
+    ahorrosAnual.innerHTML =  "$ " + formcash.format(Ah)
 }
 
 </script>
